@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag & Drop</title>
+</head>
+
+<body>
+    <h2>Trascina le immagini sulla descrizione corretta</h2>
+    <div class="wrapper">
+        <div class="description">
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/tech">Tecnology</p>
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/nature">Nature</p>
+        </div>
+        <div class="separate">
+
+        </div>
+        <div class="image">
+            <div class="container_img">
+                <img src="https://placeimg.com/150/150/animals" alt="animal" draggable="true"
+                    ondragstart="dragStart(event)">
+                <img src="https://placeimg.com/150/150/tech" alt="tech" draggable="true"
+                    ondragstart="dragStart(event)">
+            </div>
+        </div>
+        <div class="description">
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/animals">Animal</p>
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/arch">Architecture</p>
+        </div>
+        <div class="separate">
+
+        </div>
+        <div class="image">
+            <div class="container_img">
+                <img src="https://placeimg.com/150/150/arch" alt="arch" draggable="true"
+                    ondragstart="dragStart(event)">
+                <img src="https://placeimg.com/150/150/people" alt="people" draggable="true"
+                    ondragstart="dragStart(event)">
+            </div>
+        </div>
+        <div class="description">
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/people">People</p>
+            <p ondragover="dragOver(event)" ondrop="drop(event)"
+                data-risposta="https://placeimg.com/150/150/greyscale">Other</p>
+        </div>
+        <div class="separate">
+
+        </div>
+        <div class="image">
+            <div class="container_img">
+                <img src="https://placeimg.com/150/150/nature" alt="nature" draggable="true"
+                    ondragstart="dragStart(event)">
+                <img src="https://placeimg.com/150/150/greyscale" alt="greyscale" draggable="true"
+                    ondragstart="dragStart(event)">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
